@@ -7,6 +7,26 @@
     <link href="./css/style.css" rel="stylesheet" />
     <script src="./js/script.js" defer></script>
     <title>Заря</title>
+    
+    <style>
+  .airmail-bar {
+    display: flex;
+    height: 30px;
+    overflow: hidden;
+    transform: skewX(-20deg);
+    margin-top: 10px;
+  }
+
+  .airmail-bar .stripe {
+    flex: 0 0 30px;
+    height: 100%;
+  }
+
+  .airmail-bar .red { background: #d60000; }
+  .airmail-bar .white { background: #ffffff; }
+  .airmail-bar .blue { background: #0033cc; }
+</style>
+
   </head>
   <body>
     <div class="scale_wrapper">
@@ -16,6 +36,18 @@
           <div class="header_title">
           <p>Башкирских отдыхающих встревожила слизь, Стр. 3-4</p>
         </div>
+        <div class="airmail-bar">
+  <div class="stripe red"></div>
+  <div class="stripe white"></div>
+  <div class="stripe blue"></div>
+  <div class="stripe white"></div>
+  <div class="stripe red"></div>
+  <div class="stripe white"></div>
+  <div class="stripe blue"></div>
+  <div class="stripe white"></div>
+  <div class="stripe red"></div>
+</div>
+
         <div class="header_pics">
           <img src="./images/icon_left.jpg" alt="рис. 2" />
           <img src="./images/zarya_title.jpg" alt="рис. 3" />
