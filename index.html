@@ -9,22 +9,36 @@
     <title>Заря</title>
     
     <style>
-  .airmail-bar {
-    display: flex;
-    height: 30px;
-    overflow: hidden;
-    transform: skewX(-20deg);
-    margin-top: 10px;
-  }
+.airmail-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  overflow: visible;
+}
 
-  .airmail-bar .stripe {
-    flex: 0 0 30px;
-    height: 100%;
-  }
+.airmail-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  transform: skewX(-20deg);
+  z-index: 1;
+}
 
-  .airmail-bar .red { background: #d60000; }
-  .airmail-bar .white { background: #ffffff; }
-  .airmail-bar .blue { background: #0033cc; }
+.stripe {
+  width: 30px;
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.red   { background: #d60000; }
+.white { background: #ffffff; }
+.blue  { background: #0033cc; }
+
 </style>
 
   </head>
@@ -36,16 +50,16 @@
           <div class="header_title">
           <p>Башкирских отдыхающих встревожила слизь, Стр. 3-4</p>
         </div>
-        <div class="airmail-bar">
-  <div class="stripe red"></div>
-  <div class="stripe white"></div>
-  <div class="stripe blue"></div>
-  <div class="stripe white"></div>
-  <div class="stripe red"></div>
-  <div class="stripe white"></div>
-  <div class="stripe blue"></div>
-  <div class="stripe white"></div>
-  <div class="stripe red"></div>
+       <div class="airmail-wrapper">
+  <div class="airmail-bar">
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+  </div>
 </div>
 
         <div class="header_pics">
