@@ -1,8 +1,8 @@
 :root {
   /* Переменные для изменения цвета полоски */
-  --airmail-red: #F2F2F2;
-  --airmail-white: #edde32;
-  --airmail-blue: #e132ed;
+  --airmail-red: #d60000;
+  --airmail-white: #ffffff;
+  --airmail-blue: #0033cc;
 }
 
 html,
@@ -380,22 +380,12 @@ content {
   height: 30px;
   background-image: repeating-linear-gradient(
     45deg,
-    /* #d60000 0,
-    #d60000 20px,
-    #ffffff 20px,
-    #ffffff 40px,
-    #0033cc 40px,
-    #0033cc 60px,
-    #ffffff 60px,
-    #ffffff 80px */
       var(--airmail-red) 0,
     var(--airmail-red) 20px,
     var(--airmail-white) 20px,
     var(--airmail-white) 40px,
     var(--airmail-blue) 40px,
-    var(--airmail-blue) 60px,
-    var(--airmail-white) 60px,
-    var(--airmail-white) 80px
+    var(--airmail-blue) 60px
   );
   flex-shrink: 0;
   display: block;
