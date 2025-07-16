@@ -9,24 +9,21 @@
     <title>Заря</title>
     
     <style>
-.airmail-wrapper {
+.airmail-bar-outer {
   position: relative;
-  width: 100%;
-  height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  overflow: hidden;
   margin: 10px 0;
-  overflow: visible;
+  z-index: 1000;
 }
 
 .airmail-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 30px;
-  width: 100vw;
   display: flex;
   flex-wrap: nowrap;
+  height: 30px;
   transform: skewX(-20deg);
-  z-index: 1;
 }
 
 .stripe {
@@ -35,14 +32,26 @@
   flex: 0 0 auto;
 }
 
-.red   { background: #d60000; }
+.red { background: #d60000; }
 .white { background: #ffffff; }
-.blue  { background: #0033cc; }
+.blue { background: #0033cc; }
 
 </style>
 
   </head>
   <body>
+    <div class="airmail-bar-outer">
+  <div class="airmail-bar">
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+    <div class="stripe red"></div><div class="stripe white"></div><div class="stripe blue"></div><div class="stripe white"></div>
+  </div>
+</div>
+
     <div class="scale_wrapper">
       <header>
         <!-- заголовок и верхняя реклама -->
