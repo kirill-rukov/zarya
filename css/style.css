@@ -360,6 +360,7 @@ content {
 }
 .airmail-gradient {
   width: 100vw;
+  margin-left: calc(-50vw + 50%);
   height: 30px;
   background-image: repeating-linear-gradient(
     45deg,
