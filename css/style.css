@@ -13,10 +13,6 @@ body {
   width: 99%;
 }
 
-body .airmail-gradient {
-  align-self: stretch;
-}
-
 @media screen and (max-width: 499) {
   .scale_wrapper {
     margin: 1% !important;
