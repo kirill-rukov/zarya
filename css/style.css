@@ -1,8 +1,18 @@
+:root {
+  /* Переменные для изменения цвета полоски */
+  --airmail-red: #d60000;
+  --airmail-white: #ffffff;
+  --airmail-blue: #0033cc;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   zoom: normal;
 }
 
@@ -73,6 +83,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .header_title div {
@@ -97,12 +108,14 @@ header {
 }
 
 .header_pics {
-  border-top: 5px solid #cf2c3e;
+  /* border-top: 5px solid #cf2c3e; */
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 35px;
 }
 
 .header_pics img {
@@ -359,19 +372,30 @@ content {
   margin-bottom: 15px;
 }
 .airmail-gradient {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  position: absolute;
+  left: 0;
+  /*  */
+  width: 100%;
+  /* margin-left: calc(-50vw + 50%); */
   height: 30px;
   background-image: repeating-linear-gradient(
     45deg,
-    #d60000 0,
+    /* #d60000 0,
     #d60000 20px,
     #ffffff 20px,
     #ffffff 40px,
     #0033cc 40px,
     #0033cc 60px,
     #ffffff 60px,
-    #ffffff 80px
+    #ffffff 80px */
+      var(--airmail-red) 0,
+    var(--airmail-red) 20px,
+    var(--airmail-white) 20px,
+    var(--airmail-white) 40px,
+    var(--airmail-blue) 40px,
+    var(--airmail-blue) 60px,
+    var(--airmail-white) 60px,
+    var(--airmail-white) 80px
   );
   flex-shrink: 0;
   display: block;
