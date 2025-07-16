@@ -1,8 +1,8 @@
 :root {
   /* Переменные для изменения цвета полоски */
-  --airmail-red: #d60000;
-  --airmail-white: #ffffff;
-  --airmail-blue: #0033cc;
+  --airmail-red: #edde32;
+  --airmail-white: #32eaed;
+  --airmail-blue: #e132ed;
 }
 
 html,
