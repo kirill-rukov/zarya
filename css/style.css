@@ -13,6 +13,10 @@ body {
   width: 99%;
 }
 
+body .airmail-gradient {
+  align-self: stretch;
+}
+
 @media screen and (max-width: 499) {
   .scale_wrapper {
     margin: 1% !important;
@@ -360,4 +364,21 @@ content {
 
 .bottom_img {
   margin-bottom: 15px;
+}
+.airmail-gradient {
+  width: 100vw;
+  height: 30px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #d60000 0,
+    #d60000 20px,
+    #ffffff 20px,
+    #ffffff 40px,
+    #0033cc 40px,
+    #0033cc 60px,
+    #ffffff 60px,
+    #ffffff 80px
+  );
+  flex-shrink: 0;
+  display: block;
 }
